@@ -34,7 +34,7 @@
 # docker run --rm paramak pytest /tests
 # docker run --rm paramak  /bin/bash -c "bash run_tests.sh"
 
-FROM continuumio/miniconda3:4.9.2 as dependencies
+FROM continuumio/miniconda3:4.12.0 as dependencies
 
 # By default this Dockerfile builds with the latest release of CadQuery 2
 ARG cq_version=master
@@ -67,8 +67,6 @@ WORKDIR /home/paramak
 
 FROM dependencies as final
 
-ARG paramak_version=develop
-
 COPY run_tests.sh run_tests.sh
 COPY src src/
 COPY examples examples/
@@ -78,7 +76,9 @@ COPY pyproject.toml pyproject.toml
 COPY README.md README.md
 COPY LICENSE.txt LICENSE.txt
 
-
+ARG paramak_version=1.0.0
+# SETUPTOOLS_SCM_PRETEND_VERSION_FOR_PARAMAK is used to allow versioning
+# https://github.com/pypa/setuptools_scm/blob/main/README.rst#usage-from-docker
 RUN SETUPTOOLS_SCM_PRETEND_VERSION_FOR_PARAMAK=${paramak_version} pip install .[tests,docs]
 
 CMD ["jupyter", "lab", "--notebook-dir=/home/paramak/examples", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
