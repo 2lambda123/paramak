@@ -104,9 +104,7 @@ class TestRotateStraightShape(unittest.TestCase):
         )
 
         assert test_shape.area == pytest.approx(
-            (((math.pi * (70**2)) - (math.pi * (50**2))) * 2)
-            + (math.pi * (50 * 2) * 50)
-            + (math.pi * (70 * 2) * 50)
+            (((math.pi * (70**2)) - (math.pi * (50**2))) * 2) + (math.pi * (50 * 2) * 50) + (math.pi * (70 * 2) * 50)
         )
         assert len(test_shape.areas) == 4
         assert test_shape.areas.count(pytest.approx((math.pi * (70**2)) - (math.pi * (50**2)))) == 2

@@ -39,7 +39,7 @@ class ExtrudeMixedShape(Shape):
         ),
         name: str = "extrudemixedshape",
         translate: Optional[Tuple[float, float, float]] = None,
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(color=color, name=name, **kwargs)

@@ -20,7 +20,7 @@ class PoloidalFieldCoilSet(RotateStraightShape):
         widths: Iterable[float],
         center_points: Iterable[Tuple[float, float]],
         name="pf_coil",
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(name=name, **kwargs)

@@ -38,7 +38,7 @@ class BlanketCutterStar(ExtrudeStraightShape):
             324.0,
         ],
         name: str = "blanket_cutter_star",
-        **kwargs
+        **kwargs,
     ) -> None:
 
         super().__init__(

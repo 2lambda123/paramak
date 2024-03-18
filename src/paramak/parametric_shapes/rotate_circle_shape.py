@@ -28,7 +28,7 @@ class RotateCircleShape(Shape):
         color: Tuple[float, float, float, Optional[float]] = (1.0, 1.0, 0.6),
         name: str = "rotatecircleshape",
         translate: Optional[Tuple[float, float, float]] = None,
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(color=color, name=name, **kwargs)

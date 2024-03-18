@@ -57,7 +57,7 @@ class BlanketFP(RotateMixedShape):
         offset_from_plasma: Union[float, Iterable[float]] = 0.0,
         num_points: int = 50,
         allow_overlapping_shape=False,
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(**kwargs)

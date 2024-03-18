@@ -44,7 +44,7 @@ class SweepCircleShape(Shape):
         ),
         name: str = "sweepcircleshape",
         translate: Optional[Tuple[float, float, float]] = None,
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(workplane=workplane, color=color, name=name, **kwargs)

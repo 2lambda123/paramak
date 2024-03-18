@@ -32,7 +32,7 @@ class ExtrudeHollowRectangle(ExtrudeStraightShape):
         intersect=None,
         union=None,
         extrusion_start_offset: float = 0.0,
-        **kwargs
+        **kwargs,
     ) -> None:
 
         super().__init__(
@@ -46,7 +46,7 @@ class ExtrudeHollowRectangle(ExtrudeStraightShape):
             intersect=intersect,
             union=union,
             extrusion_start_offset=extrusion_start_offset,
-            **kwargs
+            **kwargs,
         )
 
         self.center_point = center_point

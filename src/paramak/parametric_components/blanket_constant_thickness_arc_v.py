@@ -24,7 +24,7 @@ class BlanketConstantThicknessArcV(RotateMixedShape):
         inner_upper_point: Tuple[float, float],
         inner_lower_point: Tuple[float, float],
         thickness: float,
-        **kwargs
+        **kwargs,
     ) -> None:
 
         super().__init__(**kwargs)

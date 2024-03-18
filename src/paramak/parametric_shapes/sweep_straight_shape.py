@@ -39,7 +39,7 @@ class SweepStraightShape(SweepMixedShape):
             0.541,
         ),
         name: str = "sweepstraightshape",
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(
@@ -50,5 +50,5 @@ class SweepStraightShape(SweepMixedShape):
             force_cross_section=force_cross_section,
             color=color,
             name=name,
-            **kwargs
+            **kwargs,
         )

@@ -40,7 +40,7 @@ class SweepSplineShape(SweepMixedShape):
             0.435,
         ),
         name: str = "sweepsplineshape",
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(
@@ -51,5 +51,5 @@ class SweepSplineShape(SweepMixedShape):
             force_cross_section=force_cross_section,
             color=color,
             name=name,
-            **kwargs
+            **kwargs,
         )

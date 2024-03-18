@@ -20,7 +20,7 @@ class HexagonPin(ExtrudeStraightShape):
         distance: float,
         center_point: Tuple[float, float] = (0, 0),
         name: Optional[str] = "hexagon_pin",
-        **kwargs
+        **kwargs,
     ) -> None:
 
         super().__init__(name=name, distance=distance, **kwargs)
