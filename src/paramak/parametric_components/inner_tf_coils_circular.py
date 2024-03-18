@@ -31,7 +31,7 @@ class InnerTfCoilsCircular(ExtrudeMixedShape):
         azimuth_start_angle: Optional[float] = 0.0,
         workplane: Optional[str] = "XY",
         rotation_axis: Optional[str] = "Z",
-        **kwargs
+        **kwargs,
     ) -> None:
 
         super().__init__(distance=height, workplane=workplane, rotation_axis=rotation_axis, **kwargs)

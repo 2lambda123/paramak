@@ -20,7 +20,7 @@ class PlasmaFromPoints(Plasma):
         outer_equatorial_x_point: Tuple[float, float],
         inner_equatorial_x_point: Tuple[float, float],
         high_point: Tuple[float, float],
-        **kwargs
+        **kwargs,
     ):
 
         minor_radius = (outer_equatorial_x_point - inner_equatorial_x_point) / 2.0
@@ -33,7 +33,7 @@ class PlasmaFromPoints(Plasma):
             major_radius=major_radius,
             minor_radius=minor_radius,
             triangularity=triangularity,
-            **kwargs
+            **kwargs,
         )
 
         self.outer_equatorial_x_point = outer_equatorial_x_point

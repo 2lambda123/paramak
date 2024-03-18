@@ -29,7 +29,7 @@ class PoloidalFieldCoilCaseSet(RotateStraightShape):
         center_points: Iterable[float],
         name: str = "pf_coil_case_set",
         color: Tuple[float, float, float, Optional[float]] = (1.0, 1.0, 0.498),
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(name=name, color=color, **kwargs)

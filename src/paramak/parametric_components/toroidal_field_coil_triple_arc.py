@@ -39,7 +39,7 @@ class ToroidalFieldCoilTripleArc(ToroidalFieldCoil):
         azimuth_start_angle: float = 0,
         rotation_angle: float = 360.0,
         color: Tuple[float, float, float, Optional[float]] = (0.0, 0.0, 1.0),
-        **kwargs
+        **kwargs,
     ) -> None:
 
         super().__init__(
@@ -52,7 +52,7 @@ class ToroidalFieldCoilTripleArc(ToroidalFieldCoil):
             rotation_angle=rotation_angle,
             distance=distance,
             color=color,
-            **kwargs
+            **kwargs,
         )
 
         self.R1 = R1

@@ -38,7 +38,7 @@ class ITERtypeDivertor(RotateMixedShape):
         dome_thickness: float = 10,
         dome_pos: float = 0.5,
         tilts: Tuple[float, float] = (-27, 0),
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(**kwargs)

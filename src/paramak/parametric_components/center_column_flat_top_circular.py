@@ -32,7 +32,7 @@ class CenterColumnShieldFlatTopCircular(RotateMixedShape):
             0.333,
             0.0,
         ),
-        **kwargs
+        **kwargs,
     ) -> None:
 
         super().__init__(name=name, color=color, **kwargs)

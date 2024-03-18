@@ -21,7 +21,7 @@ class HollowCube(Shape):
         thickness: float = 10.0,
         center_coordinate: Tuple[float, float, float] = (0.0, 0.0, 0.0),
         name: str = "hollow_cube",
-        **kwargs
+        **kwargs,
     ):
         super().__init__(name=name, **kwargs)
         self.length = length

@@ -26,7 +26,7 @@ class SegmentedBlanketBallReactor(paramak.BallReactor):
         gap_between_blankets: float = 15.0,
         number_of_blanket_segments: int = 12,
         blanket_fillet_radius: float = 10.0,
-        **kwargs
+        **kwargs,
     ):
 
         self.gap_between_blankets = gap_between_blankets

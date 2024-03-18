@@ -68,7 +68,15 @@ class CapsuleVacuumVessel(RotateMixedShape):
         top_outer_y = bottom_outer_y + (4 * radius)
         top_outer_x = bottom_outer_x
         inner_r = radius - thickness
-        (bottom_outer_x, bottom_outer_y, thickness, radius, top_outer_x, top_outer_y, inner_r,) = (
+        (
+            bottom_outer_x,
+            bottom_outer_y,
+            thickness,
+            radius,
+            top_outer_x,
+            top_outer_y,
+            inner_r,
+        ) = (
             float(bottom_outer_x),
             float(bottom_outer_y),
             float(thickness),

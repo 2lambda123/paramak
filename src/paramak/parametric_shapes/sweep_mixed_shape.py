@@ -43,7 +43,7 @@ class SweepMixedShape(Shape):
         ),
         name: str = "sweepmixedshape",
         translate: Optional[Tuple[float, float, float]] = None,
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(workplane=workplane, color=color, name=name, **kwargs)

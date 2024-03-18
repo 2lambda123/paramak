@@ -29,7 +29,7 @@ class CoolantChannelRingStraight(ExtrudeCircleShape):
         number_of_coolant_channels: int,
         ring_radius: float,
         start_angle: Optional[float] = 0.0,
-        **kwargs
+        **kwargs,
     ) -> None:
 
         super().__init__(distance=height, radius=channel_radius, **kwargs)

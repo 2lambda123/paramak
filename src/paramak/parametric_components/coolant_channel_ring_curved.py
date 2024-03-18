@@ -32,7 +32,7 @@ class CoolantChannelRingCurved(SweepCircleShape):
         ring_radius: float,
         mid_offset: float,
         start_angle: float = 0.0,
-        **kwargs
+        **kwargs,
     ) -> None:
 
         self.ring_radius = ring_radius

@@ -46,7 +46,7 @@ class ToroidalFieldCoilRectangleRoundCorners(ExtrudeMixedShape):
         # vertical_displacement:float = 0.0,
         # rotation_angle:float = 360.,
         color: Tuple[float, float, float, Optional[float]] = (0.0, 0.0, 1.0),
-        **kwargs
+        **kwargs,
     ) -> None:
 
         super().__init__(name=name, distance=distance, color=color, **kwargs)

@@ -29,7 +29,7 @@ class PortCutterCircular(ExtrudeCircleShape):
         rotation_axis: str = "Z",
         extrusion_start_offset: float = 1.0,
         name: str = "circular_port_cutter",
-        **kwargs
+        **kwargs,
     ):
         super().__init__(
             workplane=workplane,
@@ -39,7 +39,7 @@ class PortCutterCircular(ExtrudeCircleShape):
             extrude_both=False,
             name=name,
             distance=distance,
-            **kwargs
+            **kwargs,
         )
 
         self.radius = radius
