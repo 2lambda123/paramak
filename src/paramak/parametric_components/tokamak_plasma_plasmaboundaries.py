@@ -30,7 +30,7 @@ class PlasmaBoundaries(Plasma):
         vertical_displacement: float = 0.0,
         configuration: str = "non-null",
         x_point_shift: float = 0.1,
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(
@@ -41,7 +41,7 @@ class PlasmaBoundaries(Plasma):
             vertical_displacement=vertical_displacement,
             configuration=configuration,
             x_point_shift=x_point_shift,
-            **kwargs
+            **kwargs,
         )
 
         # properties needed for plasma shapes

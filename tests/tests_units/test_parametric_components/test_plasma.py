@@ -70,7 +70,13 @@ class TestPlasma(unittest.TestCase):
         Plasma parametric component and checks the location of the x point for
         each."""
 
-        for (triangularity, elongation, minor_radius, major_radius, vertical_displacement,) in zip(
+        for (
+            triangularity,
+            elongation,
+            minor_radius,
+            major_radius,
+            vertical_displacement,
+        ) in zip(
             [-0.7, 0, 0.5],  # triangularity
             [1, 1.5, 2],  # elongation
             [100, 200, 300],  # minor radius

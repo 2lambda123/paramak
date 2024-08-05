@@ -27,7 +27,7 @@ class ExtrudeSplineShape(ExtrudeMixedShape):
             0.6,
         ),
         name: str = "extrudesplineshape",
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(distance=distance, connection_type="spline", color=color, name=name, **kwargs)

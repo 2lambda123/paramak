@@ -30,7 +30,7 @@ class PoloidalSegments(RotateStraightShape):
         number_of_segments: int = 10,
         max_distance_from_center: float = 1000.0,
         name: str = "poloidal_segmenter",
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(name=name, **kwargs)

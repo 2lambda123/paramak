@@ -30,7 +30,7 @@ class PoloidalFieldCoilCase(RotateStraightShape):
         cut=None,
         intersect=None,
         union=None,
-        **kwargs
+        **kwargs,
     ) -> None:
 
         super().__init__(color=color, **kwargs)
@@ -45,7 +45,7 @@ class PoloidalFieldCoilCase(RotateStraightShape):
             cut=cut,
             intersect=intersect,
             union=union,
-            **kwargs
+            **kwargs,
         )
 
         self.center_point = center_point

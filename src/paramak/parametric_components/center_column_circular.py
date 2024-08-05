@@ -23,7 +23,7 @@ class CenterColumnShieldCircular(RotateMixedShape):
         mid_radius: float,
         outer_radius: float,
         color: Tuple[float, float, float, Optional[float]] = (0.0, 0.333, 0.0),
-        **kwargs
+        **kwargs,
     ) -> None:
 
         super().__init__(color=color, **kwargs)

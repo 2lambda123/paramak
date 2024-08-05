@@ -24,7 +24,7 @@ class RotatedIsoscelesTriangle(RotateStraightShape):
         pivot_point: Tuple[float, float],
         pivot_angle: float = 0.0,
         name: str = "rotated_triangle",
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(name=name, **kwargs)

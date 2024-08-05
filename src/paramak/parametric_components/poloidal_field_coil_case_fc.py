@@ -17,7 +17,7 @@ class PoloidalFieldCoilCaseFC(RotateStraightShape):
         pf_coil: PoloidalFieldCoil,
         casing_thickness: float,
         color: Tuple[float, float, float, Optional[float]] = (1.0, 1.0, 0.498),
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(color=color, **kwargs)

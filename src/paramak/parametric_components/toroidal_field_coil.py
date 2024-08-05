@@ -32,7 +32,7 @@ class ToroidalFieldCoil(ExtrudeMixedShape):
         azimuth_start_angle: float = 0,
         rotation_angle: float = 360.0,
         color: Tuple[float, float, float, Optional[float]] = (0.0, 0.0, 1.0),
-        **kwargs
+        **kwargs,
     ) -> None:
 
         super().__init__(distance=distance, color=color, **kwargs)

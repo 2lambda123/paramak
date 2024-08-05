@@ -44,7 +44,7 @@ class ToroidalFieldCoilCoatHanger(ToroidalFieldCoil):
         vertical_displacement: float = 0.0,
         rotation_angle: float = 360.0,
         color: Tuple[float, float, float, Optional[float]] = (0.0, 0.0, 1.0),
-        **kwargs
+        **kwargs,
     ) -> None:
 
         super().__init__(
@@ -57,7 +57,7 @@ class ToroidalFieldCoilCoatHanger(ToroidalFieldCoil):
             rotation_angle=rotation_angle,
             distance=distance,
             color=color,
-            **kwargs
+            **kwargs,
         )
 
         self.horizontal_start_point = horizontal_start_point
