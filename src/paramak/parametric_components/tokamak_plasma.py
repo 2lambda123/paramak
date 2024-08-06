@@ -30,7 +30,7 @@ class Plasma(RotateSplineShape):
         configuration: str = "non-null",
         x_point_shift: float = 0.1,
         name: str = "plasma",
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(name=name, **kwargs)

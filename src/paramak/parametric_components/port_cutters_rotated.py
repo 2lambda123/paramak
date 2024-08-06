@@ -34,7 +34,7 @@ class PortCutterRotated(RotateStraightShape):
         fillet_radius=0.0,
         rotation_angle=10.0,
         name="port_cutter",
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(name=name, rotation_angle=rotation_angle, **kwargs)

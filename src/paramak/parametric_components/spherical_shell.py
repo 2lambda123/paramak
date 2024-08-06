@@ -7,7 +7,6 @@ patch_workplane()
 
 
 class SphericalShell(RotateMixedShape):
-
     """Create a 3d CadQuery solid spherical shell from an inner radius and a shell thickness
 
     Args:
@@ -34,7 +33,7 @@ class SphericalShell(RotateMixedShape):
             0.58,
             0.71,
         ),
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(color=color, name=name, **kwargs)

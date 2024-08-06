@@ -616,7 +616,11 @@ class SubmersionTokamak(paramak.Reactor):
             center_points = [(x, y) for x, y in zip(self.pf_coil_radial_position, self.pf_coil_vertical_position)]
 
             self._pf_coils = []
-            for counter, (center_point, pf_coil_vertical_thickness, pf_coil_radial_thickness,) in enumerate(
+            for counter, (
+                center_point,
+                pf_coil_vertical_thickness,
+                pf_coil_radial_thickness,
+            ) in enumerate(
                 zip(
                     center_points,
                     self.pf_coil_vertical_thicknesses,

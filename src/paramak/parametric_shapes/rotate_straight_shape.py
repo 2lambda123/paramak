@@ -28,7 +28,7 @@ class RotateStraightShape(RotateMixedShape):
             0.109,
         ),
         name: str = "rotatestraightshape",
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(rotation_angle=rotation_angle, color=color, connection_type="straight", name=name, **kwargs)

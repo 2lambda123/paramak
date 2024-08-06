@@ -34,7 +34,7 @@ class PortCutterRectangular(ExtrudeStraightShape):
         extrusion_start_offset: float = 1.0,
         fillet_radius: float = None,
         name: str = "rectangular_port_cutter",
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(
@@ -44,7 +44,7 @@ class PortCutterRectangular(ExtrudeStraightShape):
             extrude_both=False,
             name=name,
             distance=distance,
-            **kwargs
+            **kwargs,
         )
 
         self.height = height

@@ -43,7 +43,7 @@ class BlanketCutterParallels(ExtrudeStraightShape):
             324.0,
         ],
         name: str = "blanket_cutter_parallels",
-        **kwargs
+        **kwargs,
     ) -> None:
 
         self.main_cutting_shape = ExtrudeStraightShape(

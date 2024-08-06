@@ -26,7 +26,7 @@ class ExtrudeStraightShape(ExtrudeMixedShape):
             0.0,
         ),
         name: str = "extrudestraightshape",
-        **kwargs
+        **kwargs,
     ):
 
         super().__init__(distance=distance, connection_type="straight", color=color, name=name, **kwargs)
